@@ -1,0 +1,9 @@
+{
+  "schema": "mission-verdict-v1",
+  "mission_id": "M-ZERO-002",
+  "round": 1,
+  "verdict": "PASS",
+  "reviewed_sha": "0cec2b38806185a4da448e374ced8895a0eb753e",
+  "summary": "The plan asks A2 to delete docs/PIPELINE-PROOF.md (gone, not emptied) and change nothing else. Comparing the A1 merge (d217a43) against the reviewed commit, git diff --name-status shows exactly one change: 'D docs/PIPELINE-PROOF.md', a true deletion rather than an emptied file, and the file is absent from the checkout. A2's commit c5cc626 touches only that path, which matches build_scope. The plan's single check, 'test ! -e docs/PIPELINE-PROOF.md', passed (exit 0) per CHECKS.md, consistent with the checkout. No other files were modified, and A2 reported no blockers.",
+  "findings": []
+}
