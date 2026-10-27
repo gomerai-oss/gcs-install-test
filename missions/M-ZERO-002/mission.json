@@ -1,0 +1,12 @@
+{
+  "schema": "mission-v1",
+  "mission_id": "M-ZERO-002",
+  "title": "Prove an agent can delete a file",
+  "roles": {
+    "A1": {"agent": "a1"},
+    "A2": {"agent": "a2", "runtime": "claude-code"},
+    "A3": {"agent": "a3", "runtime": "cursor-cli"}
+  },
+  "build_scope": ["docs/PIPELINE-PROOF.md"],
+  "checks": ["test ! -e docs/PIPELINE-PROOF.md"]
+}
