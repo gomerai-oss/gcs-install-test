@@ -1,0 +1,9 @@
+{
+  "schema": "mission-verdict-v1",
+  "mission_id": "M-ZERO-001",
+  "round": 1,
+  "verdict": "PASS",
+  "reviewed_sha": "be3b11e67eb5f79afffeccaa35b29fe16aa22459",
+  "summary": "The A2 build matches missions/M-ZERO-001/PLAN.md. The merge commit be3b11e changes exactly one file against its first parent cb589bb, and A2's single commit c769b79 does the same: docs/PIPELINE-PROOF.md, 3 lines added. That file is the only path in mission.json build_scope. It holds the level-one heading '# Pipeline proof' and one sentence, 'This file was written by the A2 agent for mission M-ZERO-001.' No other files changed, and A2 reported no blockers.",
+  "findings": []
+}
